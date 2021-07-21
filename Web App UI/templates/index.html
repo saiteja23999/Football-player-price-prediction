@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type = 'text/css' href="{{ url_for('static', filename='css/style.css') }}">
+  
+</head>
+
+<body>
+<form action="{{ url_for('predict')}}"method="post">
+<h1>Predict Market Value</h1>
+<div class="row ">
+
+    	<input type="text" name="age" placeholder="Age" required="required" />
+        <input type="text" name="position_cat" placeholder="Position Cat" required="required" />
+        <input type="text" name="page_views" placeholder="Page Views" required="required" />
+        <input type="text" name="fpl_value" placeholder="Fpl Value" required="required" />
+        <input type="text" name="fpl_sel" placeholder="Fpl Sel" required="required" />
+        <input type="text" name="fpl_points" placeholder="Fpl Points" required="required" />
+        <input type="text" name="region" placeholder="Region" required="required" />
+        <input type="text" name="new_foreign" placeholder="New Foreign" required="required" />
+        <input type="text" name="age_cat" placeholder="Age Cat" required="required" />
+        <input type="text" name="club_id" placeholder="Club Id" required="required" />
+        <input type="text" name="big_club" placeholder="Big Club" required="required" />
+        <input type="text" name="new_signing" placeholder="New Signing" required="required" />
+            </div>
+     <button type="submit" class="btn btn-success btn-block btn-large">Predict</button>
+    </form>
+ <div class="login">
+
+
+     <div>
+
+
+
+     <!-- Main Input For Receiving Query to our ML -->
+
+
+
+
+
+        
+        
+
+
+<br>
+   {{ prediction_text }}
+         </div>
+      </div>
+ </.div>
+
+
+</body>
+</html>
