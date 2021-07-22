@@ -1,2 +1,2 @@
 # Football-player-price-prediction
-Predicting the price of a football player using various Machine Learning regressions and tuning the hyperparameters to build the most accurate model, dataset is downloaded from the kaggle.
+Predicting the price of a football player using various Machine Learning regressions (i.e., Linear Regression, Lasso Regression, Ridge Regression, Nearest Neighbour Regression, Support Vector Regression, Tree Regression, Random Forest Regression and Gradient Boosted Regression) and tuning the hyperparameters to build the most accurate model, dataset is downloaded from the kaggle.
